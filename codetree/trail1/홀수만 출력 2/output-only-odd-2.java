@@ -7,7 +7,12 @@ public class Main{
         int b = sc.nextInt();
 
         for(int i = a; i >= b; i -= 2) {
+            if(a % 2 == 0) {
+                a -= 1;
+            } else {
                 System.out.print(i + " ");
+            }
+             
         }
 
     }
