@@ -5,9 +5,12 @@ public class Main{
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        int[] days = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-
-        System.out.println(days[n]);
-
+        if(n == 2) {
+            System.out.println(28);
+        } else if (n == 4 || n == 6 || n == 9 || n == 11) {
+            System.out.println(30);
+        } else {
+            System.out.println(31);
+        }
     }
 }
