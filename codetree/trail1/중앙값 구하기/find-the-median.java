@@ -7,12 +7,9 @@ public class Main{
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        if ((b < a && a < c) || (c < a && a < b)) {
-            System.out.println(a);
-        } else if ((a < b && b < c) || (c < b && b < a)) {
-            System.out.println(b);
-        } else {
-            System.out.println(c);
-        }
+        int answer = Math.max(Math.min(a, b), Math.min(Math.max(a, b), c));
+        System.out.println(answer);
+   
+             
     }
 }
