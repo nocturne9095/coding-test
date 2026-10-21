@@ -5,12 +5,21 @@ public class Main{
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        if(n == 2) {
-            System.out.println(28);
-        } else if (n == 4 || n == 6 || n == 9 || n == 11) {
-            System.out.println(30);
-        } else {
-            System.out.println(31);
+        int answer;
+        switch(n) {
+            case 2:
+                answer = 28;
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                answer = 30;
+                break;
+            default:
+                answer = 31;
+                break;
         }
+        System.out.println(answer);
     }
 }
