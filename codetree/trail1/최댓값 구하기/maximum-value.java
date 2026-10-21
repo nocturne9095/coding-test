@@ -7,15 +7,7 @@ public class Main{
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        int answer;
-        if(a >= b && a >= c) {
-            answer = a;
-        } else if (b >= c) {
-            answer = b;
-        } else {
-            answer = c;
-        }
-
-        System.out.println(answer);
+        int answer = Math.max(a, Math.max(b, c));
+        System.out.println(answer);     
     }
 }
