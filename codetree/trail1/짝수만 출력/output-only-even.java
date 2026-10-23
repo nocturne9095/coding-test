@@ -6,15 +6,12 @@ public class Main{
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        if(a % 2 == 0) {
-            while (a <= b) {
+        while (a <= b) {
+            if (a % 2 == 0) {
                 System.out.print(a + " ");
-                a += 2;
             } 
-        } else {
             a++;
-        }
-
+        } 
 
     }
 }
