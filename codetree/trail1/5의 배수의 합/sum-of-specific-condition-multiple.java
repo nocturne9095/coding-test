@@ -8,20 +8,18 @@ public class Main{
 
         int sum = 0;
 
-        if(a >= b) {
-            for (int i = b; i <= a; i++) {
-                if(i % 5 == 0) {
-                    sum += i;
-                }
-            }
-        } else {
-            for (int i = a; i <= b; i++) {
-                if(i % 5 == 0) {
-                    sum += i;
-                }
+        if (b > a) {
+            int temp = b;
+            b = a;
+            a = temp;
+        }
+
+        for(int i = b; i <= a; i++) {
+            if(i % 5 == 0) {
+                sum += i;
             }
         }
-        System.out.print(sum);
 
+        System.out.print(sum);
     }
 }
