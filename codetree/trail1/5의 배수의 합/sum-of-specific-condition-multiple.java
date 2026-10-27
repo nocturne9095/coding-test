@@ -7,18 +7,14 @@ public class Main{
         int b = sc.nextInt();
 
         int sum = 0;
+        int str = Math.min(a, b);
+        int end = Math.max(a, b);
 
-        if (a > b) {
-            int temp = a;
-            a = b;
-            b = temp;
-        }
-
-        for(int i = a; i <= b; i++) {
+        for(int i = str; i <= end; i++) {
             if(i % 5 == 0) {
                 sum += i;
             }
-        }
+        }    
 
         System.out.print(sum);
     }
