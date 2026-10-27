@@ -15,7 +15,9 @@ public class Main {
                 cnt3++;
             } else if (i % 2 == 0) {
                 cnt2++;
-            } 
+            } else {
+                //청소 없는 날
+            }
         }
         System.out.print(cnt2 + " " + cnt3 + " " + cnt12);
 
