@@ -13,6 +13,11 @@ public class Main{
                 break;
             }
         }
-        System.out.println(found ? "YES" : "NO");
+        
+        if(found) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
     }
 }
