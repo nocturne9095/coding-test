@@ -7,13 +7,11 @@ public class Main{
         int c = sc.nextInt();
 
         boolean found = false;
-        int i = a;
-        while (i <= b) {
+        for (int i = a; i <= b; i++) {
             if(i % c == 0) {
                 found = true;
                 break;
             }
-            i++;
         }
         System.out.println(found ? "YES" : "NO");
     }
